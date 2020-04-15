@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@section Scripts
+{
+    <script src="~/js/Chat.js"></script>
+}
+
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-2 border-left  border-top border-bottom p-0" id="ContactList" name="ContactList">
+            <label class="p-1">Contacts</label>
+            <div style="width:100%;" class="border-bottom p-0"></div>
+            <ul id="ContactListData"></ul>
+        </div>
+        <div class="col-4 border-left border-right border-top border-bottom p-0" id="conversationList" name="conversationList">
+            <label class="p-1">Conversations</label>
+            <div style="width:100%;" class="border-bottom p-0"></div>
+            <ul id="conversationListData"></ul>
+        </div>
+        <div class="col-6 border-right border-top border-bottom">
+            <form class="form-inline col-sm-12" id="chatform">
+                <div style="width:100%;height:400px;" class="border-bottom">
+                    <ul id="chatHistory"></ul>
+                </div>
+
+                <div class="row" style="width:100%" ;">
+                    <div class="col-sm-8">
+                        <input style="width:100%" type="text" name="group-message" id="messagetext" placeholder="Type a message" />
+                    </div>
+                    <div class="col-sm-4">
+                        <input type="submit" id="groupmsg" class="btn btn-info" value="Send" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
