@@ -20,6 +20,7 @@ namespace ChatAppSignalR.Hubs
         {
             var messageObj = new Models.MessageModel { Name = user, text = message, sendAt = DateTimeOffset.UtcNow };
             await Clients.All.SendAsync("RecieveMessage", messageObj.Name , messageObj.text , messageObj.sendAt);
+
         }
     }
 }
