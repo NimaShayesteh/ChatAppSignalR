@@ -1,9 +1,15 @@
-var name = "visitor";
+var name = "";
+
+
+var urlParams = new URLSearchParams(window.location.search);
+//console.log(urlParams.has('post')); // true
+name = urlParams.get('userName'); // "edit"
 
 
 var connection = new signalR.HubConnectionBuilder().withUrl('/chatHub').build();
 
 connection.on('RecieveMessage', renderMessage);
+connection.on('ShowContactList', updateContactList);
 
 connection.start();
 
@@ -19,7 +25,19 @@ function ready() {
         });
 }
 
-function renderMessage(name,text,sendAt) {
+
+function updateContactList(name, sendAt, connections) {
+    var contactList = document.getElementById('ContactListData');
+    connections.forEach(function (item) {
+        var newItem = document.createElement('li');
+        contactList.append('<li>' + item + '</li>');
+    });
+    console.log(connections);
+}
+
+
+
+function renderMessage(name, sendAt, text) {
     var nameSpan = document.createElement('span');
     nameSpan.className = 'name';
     nameSpan.textContent = name;
@@ -50,8 +68,8 @@ function renderMessage(name,text,sendAt) {
 function sendMessage(text) {
     console.log(text);
     //if (text && text.lenght) {
-        
-        connection.invoke('SendMessage', name, text);
+
+    connection.invoke('SendMessage', name, text);
     //}
 }
 

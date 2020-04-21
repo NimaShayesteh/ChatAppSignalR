@@ -1,0 +1,30 @@
+﻿@page
+@model ChatAppSignalR.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Login Page</h1>
+<div class="container">
+    <form method="post">
+        <div class="row">
+            <div class="col-sm-6">
+                <input type="text" name="userName" id="userName" placeholder="Enter your name ..." />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <input type="text" name="Password" id="Password" placeholder="Enter your name ..." />
+            </div>
+        </div>
+
+        <div class="row m-1">
+            <div class="col-sm-4">
+                <input type="submit" name="LoginButton" id="LoginButton" class="btn btn-info" value="Login" />
+            </div>
+        </div>
+    </form>
+</div>
+
+
