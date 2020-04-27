@@ -12,11 +12,15 @@ namespace ChatAppSignalR.Hubs
            new ConnectionMapping<string>();
         public override async Task OnConnectedAsync()
         {
+            if (Context.User.Identity.Name == null)
+                return;
+
             await Clients.Caller.SendAsync("RecieveMessage", "Supportment Part", DateTimeOffset.UtcNow, "Welcome to our chat application!");
             var name = Context.User.Identity.Name;
             _connections.Add(name, Context.ConnectionId);
             var allConnections = _connections.GetAllConnections();
-            await Clients.Caller.SendAsync("ShowContactList", "Supportment Part", DateTimeOffset.UtcNow, allConnections);
+            
+            await Clients.All.SendAsync("ShowContactList", "Supportment Part", DateTimeOffset.UtcNow,allConnections);
             await base.OnConnectedAsync();
         }
         public override Task OnDisconnectedAsync(Exception exception)
@@ -36,6 +40,11 @@ namespace ChatAppSignalR.Hubs
             }
 
          //   await Clients.All.SendAsync("RecieveMessage", messageObj.Name , messageObj.text , messageObj.sendAt);
+        }
+
+        public  Task SendPrivateMessage(string user, string message)
+        {
+            return Clients.User("sina").SendAsync("RecieveMessage", message);
         }
     }
 }

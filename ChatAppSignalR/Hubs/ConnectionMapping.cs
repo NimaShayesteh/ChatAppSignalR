@@ -48,9 +48,9 @@ namespace ChatAppSignalR.Hubs
         }
 
 
-        public List<HashSet<string>> GetAllConnections()
+        public List<T> GetAllConnections()
         {
-            return _connections.Values.ToList();
+            return _connections.Select(current => current.Key).ToList();
         }
 
         public void Remove(T key, string connectionId)

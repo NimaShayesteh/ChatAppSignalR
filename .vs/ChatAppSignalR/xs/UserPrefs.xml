@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{11A989ED-2734-4BEC-81B3-3D5027F4630A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChatAppSignalR/Hubs/ChatHub.cs">
+    <Files>
+      <File FileName="ChatAppSignalR/Pages/Login.cshtml" Line="1" Column="1" />
+      <File FileName="ChatAppSignalR/Pages/Login.cshtml.cs" Line="32" Column="25" />
+      <File FileName="ChatAppSignalR/appsettings.json" Line="1" Column="1" />
+      <File FileName="ChatAppSignalR/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="ChatAppSignalR/Program.cs" Line="1" Column="1" />
+      <File FileName="ChatAppSignalR/libman.json" Line="1" Column="1" />
+      <File FileName="ChatAppSignalR/Properties/launchSettings.json" Line="24" Column="70" />
+      <File FileName="ChatAppSignalR/Hubs/ChatHub.cs" Line="46" Column="1" />
+      <File FileName="ChatAppSignalR/Hubs/ConnectionMapping.cs" Line="49" Column="1" />
+      <File FileName="ChatAppSignalR/Pages/Index.cshtml" Line="1" Column="1" />
+      <File FileName="ChatAppSignalR/wwwroot/js/Chat.js" Line="33" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ChatAppSignalR" expanded="True">
+            <Node name="ChatAppSignalR" expanded="True">
+              <Node name="Hubs" expanded="True">
+                <Node name="ChatHub.cs" selected="True" />
+              </Node>
+              <Node name="Pages" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ChatAppSignalR PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/SourcesAndDocs/project/ChatAppSignalR/ChatAppSignalR/Hubs/ChatHub.cs" relfile="ChatAppSignalR/Hubs/ChatHub.cs" line="46" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

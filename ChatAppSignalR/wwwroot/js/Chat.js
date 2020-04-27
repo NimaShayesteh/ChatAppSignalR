@@ -30,7 +30,8 @@ function updateContactList(name, sendAt, connections) {
     var contactList = document.getElementById('ContactListData');
     connections.forEach(function (item) {
         var newItem = document.createElement('li');
-        contactList.append('<li>' + item + '</li>');
+        newItem.textContent = item;
+        contactList.append(newItem);
     });
     console.log(connections);
 }
@@ -69,7 +70,7 @@ function sendMessage(text) {
     console.log(text);
     //if (text && text.lenght) {
 
-    connection.invoke('SendMessage', name, text);
+    connection.invoke('SendPrivateMessage', name, text);
     //}
 }
 

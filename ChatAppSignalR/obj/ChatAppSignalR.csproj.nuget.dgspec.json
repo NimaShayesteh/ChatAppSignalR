@@ -1,31 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\me-shayesteh\\source\\repos\\ChatAppSignalR\\ChatAppSignalR\\ChatAppSignalR.csproj": {}
+    "/Volumes/SourcesAndDocs/project/ChatAppSignalR/ChatAppSignalR/ChatAppSignalR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\me-shayesteh\\source\\repos\\ChatAppSignalR\\ChatAppSignalR\\ChatAppSignalR.csproj": {
+    "/Volumes/SourcesAndDocs/project/ChatAppSignalR/ChatAppSignalR/ChatAppSignalR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\me-shayesteh\\source\\repos\\ChatAppSignalR\\ChatAppSignalR\\ChatAppSignalR.csproj",
+        "projectUniqueName": "/Volumes/SourcesAndDocs/project/ChatAppSignalR/ChatAppSignalR/ChatAppSignalR.csproj",
         "projectName": "ChatAppSignalR",
-        "projectPath": "C:\\Users\\me-shayesteh\\source\\repos\\ChatAppSignalR\\ChatAppSignalR\\ChatAppSignalR.csproj",
-        "packagesPath": "C:\\Users\\me-shayesteh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\me-shayesteh\\source\\repos\\ChatAppSignalR\\ChatAppSignalR\\obj\\",
+        "projectPath": "/Volumes/SourcesAndDocs/project/ChatAppSignalR/ChatAppSignalR/ChatAppSignalR.csproj",
+        "packagesPath": "/Users/nimashayesteh/.nuget/packages/",
+        "outputPath": "/Volumes/SourcesAndDocs/project/ChatAppSignalR/ChatAppSignalR/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\me-shayesteh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/nimashayesteh/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.0.201.52:81/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,10 +80,6 @@
             {
               "name": "Microsoft.AspNetCore.App.Ref",
               "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.0.2, 3.0.2]"
             }
           ],
           "frameworkReferences": {
@@ -97,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
         }
       }
     }
